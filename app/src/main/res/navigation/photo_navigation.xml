@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/photoNavigation"
+    app:startDestination="@id/photoFragment">
+
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.example.fitpeo.ui.fragments.PhotoListFragment"
+        android:label="Photo"
+        tools:layout="@layout/photo_list_fragment">
+        <action
+            android:id="@+id/list_To_Detail"
+            app:destination="@id/photoDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/photoDetail"
+        android:name="com.example.fitpeo.ui.fragments.ImageDetailsFragment"
+        android:label="PhotoDetail"
+        tools:layout="@layout/image_details"/>
+
+
+</navigation>
